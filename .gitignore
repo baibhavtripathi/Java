@@ -23,3 +23,5 @@
 hs_err_pid*
 /GsonSerializeDeserialize/
 /.idea/
+
+.idea/*
