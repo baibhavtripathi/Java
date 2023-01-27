@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean id="dev" class="xml.based.configuration.Developer">
+        <property name="skills">
+            <array>
+                <value>Java</value>
+                <value>Spring Boot</value>
+                <value>Angular</value>
+                <value>Python</value>
+            </array>
+        </property>
+    </bean>
+    <bean id="arch" class="xml.based.configuration.Architect">
+        <constructor-arg value="Senior"></constructor-arg>
+    </bean>
+
+</beans>
