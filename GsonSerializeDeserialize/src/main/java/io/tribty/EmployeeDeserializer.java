@@ -10,7 +10,7 @@ public class EmployeeDeserializer implements JsonDeserializer<Employee> {
      * @param jsonElement
      * @param type
      * @param jsonDeserializationContext
-     * @return
+     * @return {@code Employee}
      * @throws JsonParseException
      */
     @Override
@@ -26,7 +26,7 @@ public class EmployeeDeserializer implements JsonDeserializer<Employee> {
         LocalDate date = LocalDate.of(year, month, day);
         return new Employee(
                 json.get("empId").getAsInt(),
-                json.get("empName").getAsString(),
+                json.get("empN ame").getAsString(),
                 json.get("salary").getAsDouble(),
                 date,
                 json.get("isPermanet").getAsBoolean()

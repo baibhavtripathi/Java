@@ -9,10 +9,10 @@ import java.lang.reflect.Type;
 
 public class BooleanSerializer implements JsonSerializer<Boolean> {
     /**
-     * @param aBoolean
-     * @param type
-     * @param jsonSerializationContext
-     * @return
+     * @param aBoolean input bool value
+     * @param type value type
+     * @param jsonSerializationContext context
+     * @return JsonElement
      */
     @Override
     public JsonElement serialize(Boolean aBoolean, Type type, JsonSerializationContext jsonSerializationContext) {
