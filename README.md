@@ -147,7 +147,7 @@
     >* toString method
     >* StringTokenizer class
 
-- [x] Java Thread
+- [ ] Java Thread
     >* Java multithreading
     >* Multithreading life cycle of a thread creating
     >* Thread scheduler
@@ -179,13 +179,13 @@
     >* Batch Processing
     >* JDBC New Features, Mini Project, and interview questions.
 
-- [x] Agile 
+- [ ] Agile 
     >* Agile model
     >* Advantages, and Disadvantages of Agile model
     >* Agile versus Waterfall method
     >* Important terminology: Scrum, Scrum Master, Flow of Agile Implementation, Sprint, and Burn down Charts.
 
-- [x] Design Pattern
+- [ ] Design Pattern
     >* Singleton Object
     >* Singleton design pattern with Serialization
     >* Factory Pattern
