@@ -1,15 +1,15 @@
 public class SwitchExpression {
     public static void main(String[] args) {
-        String day = "Monday";
-        switch (day) {
-            case "Monday" -> System.out.println("First day of the week");
-            case "Tuesday" -> System.out.println("Second day of the week");
-            case "Wednesday" -> System.out.println("Third day of the week");
-            case "Thursday" -> System.out.println("Fourth day of the week");
-            case "Friday" -> System.out.println("Fifth day of the week");
-            case "Saturday" -> System.out.println("Sixth day of the week");
-            case "Sunday" -> System.out.println("Seventh day of the week");
-            default -> System.out.println("Invalid day");
-        }
+        String Days = "Monday";
+        String res = switch (Days) {
+            case "Monday" -> "First Day of the Week";
+            case "Tuesday" -> "Second Day of the Week";
+            case "Wednesday" -> "Third Day of the Week";
+            case "Thursday" -> "Fourth Day of the Week";
+            case "Friday" -> "Fifth Day of the Week";
+            case "Saturday" -> "Sixth Day of the Week";
+            case "Sunday" -> "Seventh Day of the Week";
+            default -> "Invalid Day";
+        };
     }
 }
