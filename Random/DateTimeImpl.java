@@ -19,6 +19,7 @@ import java.util.Date;
 
 public class DateTimeImpl {
    public static void main(String[] args) {
+        // Example Blog - https://medium.com/javarevisited/mastering-the-java-time-api-a-comprehensive-guide-c22376ab323a
         LocalDate localDate = LocalDate.now();
         LocalDate ofLocalDate = LocalDate.of(1, 1, 1);
         LocalDate ofEpochDayLocalDate = LocalDate.ofEpochDay(6665);
