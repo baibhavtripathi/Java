@@ -171,6 +171,7 @@ public class SwitchExpression {
             When using subclasses with pattern matching in switch, the order of the cases matters.
             Let’s consider an example where the String case comes after the CharSequence case.
         */
+        /*
         Object obj1 = "10.5";
         double convertStringToDouble = switch (obj1) {
                 case CharSequence c -> Double.parseDouble(c.toString());
@@ -178,7 +179,7 @@ public class SwitchExpression {
                 default -> 0d;
         };
         System.out.println(convertStringToDouble);
-
+        */
         // Since String is a subclass of CharSequence, our example will result in the following compilation error:
         /*
             [ERROR] Failed to execute goal ... on project core-java-17: Compilation failure
