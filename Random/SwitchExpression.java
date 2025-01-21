@@ -132,7 +132,7 @@ public class SwitchExpression {
          * Java 17 introduced -
          * Switch expression features
             1. Pattern matching
-            2. Gaurded pattern
+            2. Guarded pattern
             3. Null cases
          */
 
@@ -155,7 +155,7 @@ public class SwitchExpression {
         //     case Integer i -> "It's an Integer";
         //     default -> "It's neither!";
         // };
-        // System.out.println(gaurdedPatternSwitchExpResult);
+        // System.out.println(guardedPatternSwitchExpResult);
 
         // Null cases
         // case null -> "It is a null object";
