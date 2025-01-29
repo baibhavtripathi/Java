@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Map;
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class HighestOccurringElementInArray {
@@ -7,12 +8,10 @@ public class HighestOccurringElementInArray {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Array Size: ");
         int arraySize = sc.nextInt();
-
-        int[] nums = new int[arraySize];
-        System.out.println("Enter array elements:");
-        for (int j = 0; j < arraySize; j++) {
-            nums[j] = sc.nextInt();
-        }
+        // Java Stream
+        int[] nums = Arrays.stream(new int[arraySize])
+                            .map(i -> sc.nextInt())
+                            .toArray();
         sc.close();
 
         System.out.println("Smallest Number With Highest Frequency - "+ mostFrequentElement(nums));
