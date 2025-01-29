@@ -1,25 +1,38 @@
 import java.util.Scanner;
 import java.util.Map;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.HashMap;
 
 public class HighestOccurringElementInArray {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
         /*
+        * // Medium size Input
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter Array Size: ");
         int arraySize = sc.nextInt();
+
         // Java Stream + Scanner
+        System.out.println("Enter your array: ");
         int[] nums = Arrays.stream(new int[arraySize])
                             .map(i -> sc.nextInt())
                             .toArray();
-        */
+
         // One Line Input - Java Stream + Scanner
+        System.out.print("Enter your array: ");
         int[] nums = Arrays.stream(sc.nextLine().split("\\s+"))
                             .mapToInt(Integer::parseInt)
                             .toArray();
         sc.close();
-
+        */
+        // For Faster, Efficient and Large input (e.g. 10^6 range)
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("Enter your array: ");
+        int[] nums = Arrays.stream(br.readLine().split("\\s+"))
+                            .mapToInt(Integer::parseInt)
+                            .toArray();
         System.out.println("Smallest Number With Highest Frequency - "+ mostFrequentElement(nums));
     }
 
