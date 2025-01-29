@@ -6,11 +6,17 @@ import java.util.HashMap;
 public class HighestOccurringElementInArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        /*
         System.out.print("Enter Array Size: ");
         int arraySize = sc.nextInt();
-        // Java Stream
+        // Java Stream + Scanner
         int[] nums = Arrays.stream(new int[arraySize])
                             .map(i -> sc.nextInt())
+                            .toArray();
+        */
+        // One Line Input - Java Stream + Scanner
+        int[] nums = Arrays.stream(sc.nextLine().split("\\s+"))
+                            .mapToInt(Integer::parseInt)
                             .toArray();
         sc.close();
 
